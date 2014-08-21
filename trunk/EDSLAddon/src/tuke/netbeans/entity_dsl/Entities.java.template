@@ -1,0 +1,15 @@
+//iDSLAddon_start_fold desc="Define entities and their properties here."
+import sk.tuke.magsa.tools.builder.EntityBuilder;
+
+import static sk.tuke.magsa.tools.metamodel.Type.*;
+
+public class ${name} extends EntityBuilder {
+    @Override    
+    protected void define() {        
+//iDSLAddon_end_fold
+        entity(""
+        );
+//iDSLAddon_start_fold desc="Definition ends here."
+    }
+}
+//iDSLAddon_end_fold
