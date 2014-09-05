@@ -3,14 +3,16 @@
 package ${package};
 
 </#if>
-import language.builder.EntityBuilder;
+import entities.language.builder.EntityBuilder;
 
 public class ${name} extends EntityBuilder {
 
     @Override
     protected void define() {       
 //EDSLAddon_end_fold
-        entity("${cursor}"
+        entity("Foo",
+                property("Bar", string, required(), length(0, 20)),
+                property("Bar2", real)
         );
 //EDSLAddon_start_fold desc="Definition ends here."
     }
