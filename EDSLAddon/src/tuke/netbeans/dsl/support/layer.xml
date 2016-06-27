@@ -21,17 +21,33 @@
     
     <folder name="Templates">
         <folder name="DSL">
-            <attr name="SystemFileSystem.localizingBundle" stringvalue="tuke.netbeans.entity_dsl.Bundle"/>
             
-            <file name="Entities.java" url="nbresloc:/tuke/netbeans/entity_dsl/Entities.java.template">
+            <attr name="displayName" bundlevalue="tuke.netbeans.test_dsl.Bundle#Templates/DSL"/>
+            <file name="Test.java" url="nbresloc:/tuke/netbeans/test_dsl/Test.java.template">
+                <attr name="displayName" bundlevalue="tuke.netbeans.test_dsl.Bundle#Templates/DSL/Test.java"/>
+                <attr name="iconBase" stringvalue="tuke/netbeans/test_dsl/test.png"/>
                 <attr name="template" boolvalue="true"/>
-                <attr name="SystemFileSystem.localizingBundle" stringvalue="tuke.netbeans.entity_dsl.Bundle"/>
-                <attr name="SystemFileSystem.icon" urlvalue="nbresloc:/tuke/netbeans/entity_dsl/entity.png"/>
-                <attr name="templateWizardURL" urlvalue="nbresloc:/tuke/netbeans/entity_dsl/Description.html"/>
+                <attr name="templateWizardURL" urlvalue="nbresloc:/tuke/netbeans/test_dsl/Description.html"/>
                 <!--Use this line only if your template makes use of the FreeMarker template language:-->
                 <attr name="javax.script.ScriptEngine" stringvalue="freemarker"/>
             </file>
             
         </folder>
     </folder>
+    
+<!--    <folder name="Templates">
+        <folder name="DSL">
+            
+            <attr name="displayName" bundlevalue="tuke.netbeans.entity_dsl.Bundle#Templates/DSL"/>
+            <file name="Entities.java" url="nbresloc:/tuke/netbeans/entity_dsl/Entities.java.template">
+                <attr name="displayName" bundlevalue="tuke.netbeans.entity_dsl.Bundle#Templates/DSL/Entities.java"/>
+                <attr name="template" boolvalue="true"/>
+                <attr name="SystemFileSystem.icon" urlvalue="nbresloc:/tuke/netbeans/entity_dsl/entity.png"/>
+                <attr name="templateWizardURL" urlvalue="nbresloc:/tuke/netbeans/entity_dsl/Description.html"/>
+                Use this line only if your template makes use of the FreeMarker template language:
+                <attr name="javax.script.ScriptEngine" stringvalue="freemarker"/>
+            </file>
+            
+        </folder>
+    </folder>-->
 </filesystem>

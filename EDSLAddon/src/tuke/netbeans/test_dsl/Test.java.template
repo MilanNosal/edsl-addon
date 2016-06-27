@@ -1,0 +1,33 @@
+//EDSLAddon_start_fold desc="Start defining test here (run it by pressing Shift + F6):"
+<#if package?? && package != "">
+package ${package};
+
+</#if>
+import language.builder.ParsingException;
+import language.builder.TestBuilder;
+
+public class ${name} extends TestBuilder {
+
+    @Override
+    protected void define() {       
+//EDSLAddon_end_fold
+        create_test("Example of a test", 10);
+        
+        single_choice_question("Example of a single choice question?", 8);
+        incorrect_answer("answer 1");
+        incorrect_answer("answer 2");
+        correct_answer("answer 3");
+        incorrect_answer("answer 4");
+        
+        pairing_question("Example of a pairing question", 20);
+        pair("a", "A");
+        pair("b", "B");
+        pair("c", "C");
+//EDSLAddon_start_fold desc="Here ends the definition."
+    }
+    
+    public static void main(String[] args) throws ParsingException {
+        new ${name}().compose();
+    }
+}
+//EDSLAddon_end_fold
